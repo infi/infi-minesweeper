@@ -1,0 +1,13 @@
+[package]
+name = "infi-minesweeper"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = 'thin'
+opt-level = 'z'
+
+[dependencies]
+macroquad = "0.3.9"
+rand = "0.8.4"
+image = "0.23.14"
